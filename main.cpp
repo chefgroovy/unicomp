@@ -41,37 +41,50 @@ int main()
     
     vector<string> v; 
     vector<string> Key;
+    // typedef vector<string> AllKeys;
+    vector<string> AllKeys; 
+    
+    
     while (getline(inputFile, line)) 
     {
 	cout << "LINE: " << line  << endl;
 	split(line, ',', v); 
 	
-	Key.swap(v);
+	//Key.swap(v);
+	
+	
+//	for (int i = 0; i < v.size(); ++i)
+//	{
+//	  //  cout << "All: " << v[i]) << endl;
+	   //AllKeys.push_back(; 
+//	}
+	
+	//
 	
 	//vector<string> Key_v);
 	
 	v.clear();
     }
     
-    	for (int i = 0; i < Key.size(); ++i) 
+    	for (int i = 0; i < v.size(); ++i) 
 	{ 
-	    cout << "Keys: " << Key[i] << '\n\n'; 
+	    cout << "Keys: " << v[1][i] << '\n'; 
 	} 
     
     cout << "=================ORIGINAL------------" << endl;
-   vector<string> items; 
-    
-    //   ifstream inputFile("E:/CLOUD/Work/TestC++ReadList/TestReadList/103.wse.ini");
-    while (getline(inputFile, temp, '\t'))
-    {
-	//cout << "LINE: " << temp << endl;
-	//if(temp.at(0) != '#')
-	    items.push_back(temp);
-	//else break;
-    }
-    for (unsigned i = 0; i < items.size(); i++)
-        cout << items[i] << endl;
-    return 0; 
+//   vector<string> items; 
+//    
+//       ifstream inputFile("E:/CLOUD/Work/TestC++ReadList/TestReadList/103.wse.ini");
+//    while (getline(inputFile, temp, '\t'))
+//    {
+//	cout << "LINE: " << temp << endl;
+//	if(temp.at(0) != '#')
+//	    items.push_back(temp);
+//	else break;
+//    }
+//    for (unsigned i = 0; i < items.size(); i++)
+//        cout << items[i] << endl;
+//    return 0; 
  
     
 
