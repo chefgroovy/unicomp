@@ -7,7 +7,6 @@
 
 #ifndef CLSREADKBMAP_H
 #define	CLSREADKBMAP_H
-
 #include <iostream>
 #include <fstream>
 #include <string>
