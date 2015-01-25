@@ -4,12 +4,12 @@
 #include <vector>
 #include <stdio.h>
 #include <stdlib.h>
-#include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <cstring>
 #include <string.h>
+#include "clsReadKBMap.h"
 
 using namespace std;
 
@@ -28,17 +28,28 @@ void split(const string& s, char c,
          v.push_back(s.substr(i, s.length( ))); 
    } 
 } 
+class clsReadKBMap;
 int main()
 {
     
-    cout << "Hello World" << endl;
-    
+    clsReadKBMap NewKeyboard;
+    //NewKeyboard.WSEFileName = "103.wse.ini";
+    cout << NewKeyboard.WSEFileName;
+    //  Keyboard.ReadWSEFile("103.wse.ini");
+       
+       
+       //////////////////////////
     string line;
 
-    ifstream inputFile("E:/CLOUD/Work/TestC++ReadList/TestReadList/103.wse.ini");
+    //ifstream inputFile("E:/CLOUD/Work/TestC++ReadList/TestReadList/103.wse.ini");
+    ifstream inputFile("103.wse.ini");
     string temp;
     
+   
     
+    
+    
+    ///////////////////////////////////////////
     vector<string> v; 
     vector<string> Key;
     // typedef vector<string> AllKeys;
@@ -52,12 +63,12 @@ int main()
 	
 	//Key.swap(v);
 	
-	
-//	for (int i = 0; i < v.size(); ++i)
-//	{
-//	  //  cout << "All: " << v[i]) << endl;
+	int i = 0;
+	for (i = 0; i < v.size(); ++i)
+	{
+	    cout << "All: " << v.at(i) << endl;
 	   //AllKeys.push_back(; 
-//	}
+	}
 	
 	//
 	
